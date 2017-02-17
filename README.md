@@ -4,7 +4,7 @@ This reference architecture provides a set of YAML templates for deploying micro
 
 You can launch this CloudFormation stack in the US East (N. Virginia) Region in your account:
 
-[![cloudformation-launch-stack](images/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=Production&templateURL=https://s3.amazonaws.com/ecs-refarch-cloudformation/master.yaml)  
+[![cloudformation-launch-stack](images/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=Production&templateURL=https://s3.amazonaws.com/cf-templates-1pcme7ot3bbah-us-east-1/ecs-refarch-cloudformation/master.yaml)  
 
 ## Overview
 
@@ -62,7 +62,7 @@ After the CloudFormation templates have been deployed, the [stack outputs](http:
 
 You can launch this CloudFormation stack in the US East (N. Virginia) Region in your account:
 
-[![cloudformation-launch-button](images/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=Production&templateURL=https://raw.githubusercontent.com/adairgj/ecs-refarch-cloudformation/master/master.yaml)    
+[![cloudformation-launch-button](images/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=Production&templateURL=https://s3.amazonaws.com/cf-templates-1pcme7ot3bbah-us-east-1/ecs-refarch-cloudformation/master.yaml)    
 
 ### Customize the templates
 
