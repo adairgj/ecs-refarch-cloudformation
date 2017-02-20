@@ -1,0 +1,40 @@
+Description: >
+    This template deploys a Linux EC2 Instance to the provided VPC and subnets
+    using an Auto Scaling Group
+
+Parameters:
+
+    InstanceType:
+        Description: Which instance type should we use to build the EC2 Instance?
+        Type: String
+        Default: "t2.micro"
+
+    KeyName:
+        Description: Name of an existing EC2 KeyPair to enable SSH access to the instance
+        Type: String
+        Default: "MyFirstCFInstance"
+
+    Subnet:
+        Description: Choose which subnets this EC2 Instance should be deployed to
+        Type: List<AWS::EC2::Subnet::Id>
+
+    SecurityGroups:
+        Description: Select the Security Group to use for the EC2 Instance
+        Type: AWS::EC2::SecurityGroup::Id
+
+Resources:
+  Ec2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      KeyName: "MyFirstCFInstance"
+      ImageId: "ami-0932686c"
+      InstanceType: "t2.micro"
+      NetworkInterfaces:
+        - AssociatePublicIpAddress: "true"
+          DeviceIndex: "0"
+          GroupSet:
+          - sg-587aef31
+          SubnetId: "subnet-d2823ebb"
+      Tags:
+        - Key: Owner
+          Value: "Greg Adair"

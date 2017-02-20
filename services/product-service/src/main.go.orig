@@ -19,21 +19,21 @@ func main() {
 		products := []product{
 			product{
 				ID:          "0000-0000-0001",
-				Title:       "Cialis",
-				Description: "Mens Health - used to treat ED and BPH",
-				Price:       300,
+				Title:       "Fork Handles",
+				Description: "Got forks? Worn out ones? You need our all new Fork Handles",
+				Price:       6.95,
 			},
 			product{
 				ID:          "0000-0000-0002",
-				Title:       "Humalog",
-				Description: "Diabetes - fast acting insulin used to control blood surgar in type 1 or type 2 diabetes ",
-				Price:       600,
+				Title:       "Four Candles",
+				Description: "One candle never enough? You need our new Four Candles bundle",
+				Price:       3.75,
 			},
 			product{
 				ID:          "0000-0000-0003",
-				Title:       "Taltz",
-				Description: "Immunology - used to treat adults with moderate to severe plaque psoriasis",
-				Price:       14000,
+				Title:       "Egg Basket",
+				Description: "Holds 6 unbroken eggs or 36 broken ones",
+				Price:       9.99,
 			},
 		}
 
